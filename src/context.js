@@ -79,10 +79,13 @@ class ProductProvider extends React.Component {
     const index = tempCart.indexOf(chosenProduct);
     const product = tempCart[index];
     product.count = product.count - 1;
-    if(product.count===0){
+    if(product.count === 0){
       this.removeItem(id);
     } else {
-      product.total = product.total * product.price;
+      product.total = product.count * product.price;
+      this.setState({cart: [...tempCart]}, () => {
+        this.addTotals();
+      })
     }
   }
 
@@ -109,13 +112,10 @@ class ProductProvider extends React.Component {
 
   addTotals = () => {
     let subTotals = 0;
-    this.state.cart.map(item => {
-      subTotals = subTotals + item.total;
-      return subTotals;
-    })
-    const tempTax = subTotals * 0.09
+    this.state.cart.map(item => (subTotals += item.total))
+    const tempTax = subTotals * 0.09;
     // convert to simple 2 dec float
-    const tax = parseFloat(tempTax.toFixed(4));
+    const tax = parseFloat(tempTax.toFixed(2));
     const total = subTotals + tax;
     this.setState({cartSubtotal: subTotals, cartTax: tax, cartTotal: total});
   }
