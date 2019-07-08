@@ -1,22 +1,37 @@
 /*font-family: 'Rubik Mono One', sans-serif;*/
 /*font-family: 'Montserrat', sans-serif;*/
 
-:root {
+/*:root {
   --mainBlue: #2a2a72;
   --lightBlue: 	#0BAEE6;
   --mainWhite: #f3f3f3;
   --mainDark: #232528;
   --mainYellow: #ffa400
+}*/
+
+:root {
+  --mainBlue: #76323F;
+  --lightBlue: 	#C09F80;
+  --mainWhite: #f3f3f3;
+  --mainDark: #565656;
+  --mainYellow: #D7CEC7;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif !important;
+  min-height: 100vh;
+  font-family: 'DM Serif Display', serif !important;
   background: var(--mainWhite) !important;
   color: var(--mainDark) !important;
 }
 
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .text-title {
-  font-family: 'Rubik Mono One', sans-serif;
+  font-family: 'Playfair Display', serif !important;
   text-transform: uppercase;
 }
 
@@ -26,6 +41,31 @@ body {
 
 .text-bright {
   color: var(--lightBlue);
+}
+
+ul.navbar-nav li {
+  position: relative;
+}
+
+ul.navbar-nav li::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: var(--lightBlue);
+  transition: transform 0.2s ease;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+ul.navbar-nav li:hover::before {
+  transform: scaleX(1);
+}
+
+.store-container {
+  margin: 0 10%;
 }
 
 .btn-black {
@@ -46,5 +86,5 @@ body {
 .cart-icon {
   cursor: pointer;
   font-size: 1.2rem;
-  color: var(--mainYellow);
+  color: var(--lightBlue);
 }

@@ -4,23 +4,23 @@ function CartItem({item, value}) {
   const {id, title, img, price, total, count} = item;
   const {increment, decrement, removeItem} = value;
   return (
-    <div className="row my-1 text-capitalize text-center">
+    <div className="row d-flex align-items-center my-1 text-capitalize text-center">
       <div className="col-10 mx-auto col-lg-2">
         <img
           src={img}
-          style={{width: '5rem', height: '5rem'}}
+          style={{width: 'auto', maxHeight: '4rem'}}
           className="img-fluid"
           alt="product"
         />
       </div>
       <div className="col-10 mx-auto col-lg-2">
-        <div className="d-lg-none">
-          <span>product: </span> {title}
+        <div className="d-none d-lg-block">
+          <span>{title}</span>
         </div>
       </div>
       <div className="col-10 mx-auto col-lg-2">
-        <div className="d-lg-none">
-          <span>price: $</span> {price}
+        <div className="d-none d-lg-block">
+          <span>$ {price}</span>
         </div>
       </div>
       <div className="col-10 mx-auto col-lg-2 my-2 my-lg-0">

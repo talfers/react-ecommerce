@@ -36,14 +36,13 @@ class Details extends React.Component {
                   <p className="text-muted lead">{info}</p>
                   <div>
                     <Link to='/'><Button>back to products</Button></Link>
-                    <Link>
-                      <Button
-                        cart
-                        onClick={() => value.addToCart(id)}
-                        disabled={inCart ? true:false}>
-                          {inCart ? "inCart" : "Add to Cart"}
-                      </Button>
-                    </Link>
+                    <Button
+                      cart
+                      onClick={() => value.addToCart(id)}
+                      disabled={inCart ? true:false}>
+                        {inCart ? "inCart" : "Add to Cart"}
+                    </Button>
+
                   </div>
                 </div>
               </div>

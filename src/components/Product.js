@@ -18,7 +18,7 @@ class Product extends React.Component {
                   onClick={() => {value.handleDetail(id)}}
                 >
                   <Link to='/details'>
-                    <img src={img} alt="product" className="card-img-top"/>
+                    <img src={img} alt="product" style={{height: "100px", width: 'auto'}} className="card-img-top"/>
                   </Link>
                   <button
                     className="cart-btn"
@@ -33,7 +33,7 @@ class Product extends React.Component {
                         {" "} inCart
                       </p>
                     ) : (
-                      <i className="fas fa-cart-plus" />
+                      <i className="fas fa-cart-plus" ><span style={{fontSize: "1rem"}}>  Add to Cart</span></i>
                     )}
                   </button>
                 </div>
@@ -82,6 +82,8 @@ const ProductWrapper = styled.div`
   .img-container {
     position: relative;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
   }
   .card-img-top {
     transition: all 0.8s linear;

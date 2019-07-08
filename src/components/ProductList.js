@@ -10,7 +10,7 @@ class ProductList extends React.Component {
     return(
       <React.Fragment>
         <div className="py-5">
-          <div className="container">
+          <div className="store-container">
             <Title name="our" title="products" />
             <div className="row">
               <ProductConsumer>
@@ -24,8 +24,6 @@ class ProductList extends React.Component {
           </div>
         </div>
       </React.Fragment>
-
-        // <Product />
     )
   }
 }
