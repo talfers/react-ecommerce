@@ -19,7 +19,7 @@ class NavBar extends React.Component {
           <h2 className=" d-inline pl-3 m-0">Sweet's Bakery</h2>
         </Link>
         <ul className="navbar-nav align-items-center">
-          <LinkHoverMenu className="nav-item ml-4">
+          <LinkHoverMenu className="nav-item ml-4 d-none d-sm-block">
             <Link to='/products' className="nav-link p-0">
               Cakes
             </Link>
