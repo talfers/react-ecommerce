@@ -24,7 +24,7 @@ class Modal extends React.Component {
                       <img className="img-fluid" alt="product" src={img} />
                       <h5>{title}</h5>
                       <h5 className="text-muted">price: $ {price}</h5>
-                      <Link to='/'>
+                      <Link to='/products'>
                         <Button onClick={() => {closeModal()}}>
                           store
                         </Button>
