@@ -10,7 +10,7 @@
 }*/
 
 :root {
-  --mainBlue: #76323F;
+  --mainBlue: rgb(118, 50, 63);
   --lightBlue: 	#C09F80;
   --mainWhite: #f3f3f3;
   --mainDark: #565656;
@@ -33,6 +33,10 @@ body {
 .text-title {
   font-family: 'Playfair Display', serif !important;
   text-transform: uppercase;
+}
+
+.text-alternate {
+  font-family: 'Playfair Display', serif !important;
 }
 
 .text-blue {

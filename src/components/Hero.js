@@ -8,8 +8,8 @@ function Hero({img}) {
     <HeroSection>
       <img src={img} alt='hero-img'/>
       <div className="hero-content">
-        <h1 className="hero-title">This is the Store.</h1>
-        <h3 className="hero-text">Browse our many different products for both men and ladies</h3>
+        <h1 className="hero-title text-alternate">This is the Store.</h1>
+        <h3 className="hero-text text-alternate">Browse our many different products for both men and ladies</h3>
         <Link to="/products">
           <button className="hero-btn">Shop Now</button>
         </Link>
@@ -45,7 +45,7 @@ const HeroSection = styled.div`
     padding: 0 1rem;
 
     .hero-title {
-      font-size: 4rem;
+      font-size: 5rem;
     }
 
     .hero-btn {
