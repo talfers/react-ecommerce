@@ -16,7 +16,7 @@ class NavBar extends React.Component {
         </Link>
         <ul className="navbar-nav align-items-center">
           <li className="nav-item ml-4">
-            <Link to='/' className="nav-link p-0">
+            <Link to='/products' className="nav-link p-0">
               Cakes
             </Link>
           </li>
