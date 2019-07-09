@@ -16,7 +16,7 @@ class NavBar extends React.Component {
       <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
         <Link to='/' className="navbar-brand brand d-flex align-items-center">
           <img src={logo} style={{height: "3rem"}} alt="logo"/>
-          <h2 className=" d-inline pl-3 m-0">Sweet's Bakery</h2>
+          <h2 className="d-none d-sm-inline pl-3 m-0">Sweet's Bakery</h2>
         </Link>
         <ul className="navbar-nav align-items-center">
           <LinkHoverMenu className="nav-item ml-4 d-none d-sm-block">
