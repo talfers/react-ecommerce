@@ -56,6 +56,7 @@ class NavBar extends React.Component {
 
 const NavWrapper = styled.nav`
   background: var(--mainBlue);
+  min-height: 5rem;
 
   .nav-link {
     position: relative;
