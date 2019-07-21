@@ -5,7 +5,7 @@ function Footer() {
   return (
     <FooterWrapper>
       <div className="f-left">
-        <div className="author">website design by: Taylor Alfers</div>
+        <div className="author">website design by: <a href="https://taylor-alfers.herokuapp.com" >Taylor Alfers</a></div>
         <div className="attributes">Icon made by inipagistudio from <a href="https://www.flaticon.com">www.flaticon.com</a></div>
       </div>
       <div className="f-right">
@@ -29,6 +29,10 @@ const FooterWrapper = styled.div`
   .f-left, .f-right {
     display: flex;
     flex-direction: column;
+
+    a {
+      color: var(--mainBlue);
+    }
 
     .author {
       font-size: 0.8rem;
