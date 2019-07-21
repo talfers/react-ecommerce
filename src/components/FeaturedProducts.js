@@ -29,7 +29,7 @@ function FeaturedProducts() {
 const FeaturedWindow = styled.div`
   width: 100%;
   height: 70vh;
-  padding: 3rem 10%;
+  padding: 5rem 10%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,7 +101,7 @@ const FeaturedWindow = styled.div`
     .product {
         flex: 1 1 50%;
         width: 100%;
-      }
+    }
   }
 
 `

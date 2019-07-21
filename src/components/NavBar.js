@@ -9,6 +9,7 @@ import link1 from '../link-1.jpg';
 import link2 from '../link-2.jpg';
 import link3 from '../link-3.jpg';
 import link4 from '../link-4.jpg';
+import { ProductConsumer } from '../context';
 
 class NavBar extends React.Component {
   render () {
@@ -19,7 +20,7 @@ class NavBar extends React.Component {
           <h2 className="d-none d-sm-inline pl-3 m-0">Sweet's Bakery</h2>
         </Link>
         <ul className="navbar-nav align-items-center">
-          <LinkHoverMenu className="nav-item ml-4 d-none d-sm-block">
+          <LinkHoverMenu className="nav-item ml-4 d-none d-lg-block">
             <Link to='/products' className="nav-link p-0">
               Cakes
             </Link>
@@ -29,15 +30,15 @@ class NavBar extends React.Component {
                   <img src={link1} alt="link1"></img>
                   <h3>Shop All</h3>
                 </Link>
-                <Link to="/" className="hover-link">
+                <Link to="/products" className="hover-link">
                   <img src={link2} alt="link2"></img>
                   <h3>Shop 1</h3>
                 </Link>
-                <Link to="/" className="hover-link">
+                <Link to="/products" className="hover-link">
                   <img src={link3} alt="link3"></img>
                   <h3>Shop 2</h3>
                 </Link>
-                <Link to="/" className="hover-link">
+                <Link to="/products" className="hover-link">
                   <img src={link4} alt="link4"></img>
                   <h3>Shop 3</h3>
                 </Link>
@@ -45,10 +46,21 @@ class NavBar extends React.Component {
             </div>
           </LinkHoverMenu>
         </ul>
-        <Link to='/cart' className="ml-auto">
-          <Button>
-            <span className="mr-2"><i className="fas fa-shopping-cart"></i></span>Cart</Button>
-        </Link>
+
+        <ProductConsumer>
+          {(value) => {
+            return (
+              <Link to='/cart' className="ml-auto">
+                <Button>
+                  <span className="mr-2"><i className="fas fa-shopping-cart"></i></span>Cart ({(value.cart.length)})
+                </Button>
+              </Link>
+            )
+          }}
+
+        </ProductConsumer>
+
+
       </NavWrapper>
     )
   }

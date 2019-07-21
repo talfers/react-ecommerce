@@ -6,10 +6,10 @@ function Footer() {
     <FooterWrapper>
       <div className="f-left">
         <div className="author">website design by: Taylor Alfers</div>
-        <div className="attributes">Icons made by Pikicon from <a href="https://www.flaticon.com">www.flaticon.com</a></div>
+        <div className="attributes">Icon made by inipagistudio from <a href="https://www.flaticon.com">www.flaticon.com</a></div>
       </div>
       <div className="f-right">
-        <div className="copy">copyright</div>
+        <div className="copy"><i class="far fa-copyright"></i> Copyright 2019</div>
       </div>
     </FooterWrapper>
   )
@@ -17,13 +17,13 @@ function Footer() {
 
 const FooterWrapper = styled.div`
   display: flex;
-  height: 100px;
+  min-height: 100px;
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  background: var(--mainDark);
-  color: #fff;
-  padding: 0 1rem 0 1rem;
+  background: var(--mainYellow);
+  color: var(--mainDark);
+  padding: 0 3rem 0 3rem;
   align-self: flex-end;
 
   .f-left, .f-right {

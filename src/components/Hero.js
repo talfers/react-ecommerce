@@ -33,6 +33,18 @@ const HeroSection = styled.div`
     width: 100%;
     object-fit: cover;
     z-index: -1;
+    position: relative;
+
+    &:after {
+      content: '';
+      background: rgba(0,0,0,0.5);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 99;
+    }
   }
 
   .hero-content {

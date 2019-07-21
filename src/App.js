@@ -9,11 +9,12 @@ import Details from './components/Details';
 import Cart from './components/Cart/';
 import Default from './components/Default';
 import Modal from './components/Modal';
+import Footer from './components/Footer'
 
 function App() {
   return (
   <div className="app">
-    <NavBar></NavBar>
+    <NavBar ></NavBar>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/products" component={ProductList} />
@@ -21,7 +22,9 @@ function App() {
         <Route path="/cart" component={Cart} />
         <Route component={Default} />
       </Switch>
+      <Footer/>
       <Modal />
+
   </div>
   );
 }
