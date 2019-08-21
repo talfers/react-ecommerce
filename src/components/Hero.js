@@ -8,7 +8,7 @@ function Hero({img}) {
     <HeroSection>
       <img src={img} alt='hero-img'/>
       <div className="hero-content">
-        <h1 className="hero-title text-alternate">This is the Store.</h1>
+        <h1 className="hero-title text-alternate">Cake is Good.</h1>
         <h3 className="hero-text text-alternate">Browse our many different cakes, both chocloately and fruity.</h3>
         <Link to="/products">
           <button className="hero-btn">Shop Now</button>
