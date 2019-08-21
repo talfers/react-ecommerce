@@ -94,7 +94,7 @@ const LinkHoverMenu = styled.li`
     left: 75%;
     z-index: 10;
     transform: scaleX(0);
-    transition: all 0.4s ease;
+    transition: all 0.4s ease-in 0.1s;
     transform-origin: left;
     opacity: 0;
 
