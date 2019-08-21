@@ -54,7 +54,9 @@ const HeroSection = styled.div`
     justify-content: center;
     position: absolute;
     text-align: center;
-    padding: 0 1rem;
+    padding: 1rem;
+    background: rgba(0,0,0,0.4);
+    border-radius: 16px;
 
     .hero-title {
       font-size: 5rem;

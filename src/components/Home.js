@@ -7,7 +7,7 @@ class Home extends React.Component {
   render () {
     return (
       <content className="home">
-        <Hero img={"https://images.unsplash.com/photo-1518047601542-79f18c655718?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"} />
+        <Hero img={"https://images.pexels.com/photos/1120970/pexels-photo-1120970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"} />
         <ProductList></ProductList>
         <FeaturedProducts></FeaturedProducts>
       </content>
