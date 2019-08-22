@@ -19,6 +19,7 @@ function Hero({img}) {
 }
 
 const HeroSection = styled.div`
+
   width: 100%;
   height: 85vh;
   display: flex;
@@ -51,12 +52,13 @@ const HeroSection = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     position: absolute;
     text-align: center;
     padding: 1rem;
     background: rgba(0,0,0,0.4);
     border-radius: 16px;
+    margin: 0 auto;
+    max-width: 80%;
 
     .hero-title {
       font-size: 5rem;
