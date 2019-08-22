@@ -18,7 +18,7 @@ class Product extends React.Component {
                   onClick={() => {value.handleDetail(id)}}
                 >
                   <Link to='/details'>
-                    <img src={img} alt="product" style={{height: "100px", width: 'auto'}} className="card-img-top"/>
+                    <img src={img} alt="product" style={{height: "100px", width: 'auto'}} className="card-img-top lazyload"/>
                   </Link>
                   <button
                     className="cart-btn"

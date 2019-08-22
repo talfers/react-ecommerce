@@ -25,6 +25,7 @@ class ProductList extends React.Component {
             </div>
           </div>
         </section>
+        <script src="lazysizes.min.js" async=""></script>
       </React.Fragment>
     )
   }
