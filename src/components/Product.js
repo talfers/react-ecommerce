@@ -44,6 +44,7 @@ class Product extends React.Component {
                 <h5 className="text-blue font-italic mb-0"><span className="mr-1">$</span>{price}</h5>
               </div>
         </div>
+        <script src="lazysizes.min.js" async=""></script>
       </ProductWrapper>
     )
   }
