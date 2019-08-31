@@ -9,7 +9,7 @@ import CartTotals from './CartTotals';
 class Cart extends React.Component {
   render () {
     return (
-      <section style={{overflow: 'hidden', minHeight: 'calc(100vh - 5rem - 100px)'}}>
+      <section style={{overflowX: 'hidden', minHeight: 'calc(100vh - 5rem - 100px)'}}>
         <ProductConsumer>
           {value => {
             const {cart} = value;
