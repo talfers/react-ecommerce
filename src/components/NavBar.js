@@ -89,12 +89,13 @@ const NavWrapper = styled.nav`
 const LinkHoverMenu = styled.li`
 
   .hover-menu {
+    display: none;
     position: absolute;
     top: 110%;
     left: 75%;
     z-index: 10;
     transform: scaleX(0);
-    transition: all 0.4s ease-in 0.1s;
+    transition: all 0.2s ease 0.1s;
     transform-origin: left;
     opacity: 0;
 
@@ -147,6 +148,12 @@ const LinkHoverMenu = styled.li`
     .hover-menu {
       transform: scaleX(1);
       opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .hover-menu {
+      display: none;
     }
   }
 `
